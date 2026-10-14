@@ -205,8 +205,8 @@ body { overflow-x: hidden; background: linear-gradient(135deg, #667eea 0%, #764b
       <div style="font-size:12px;color:#666;margin-bottom:10px">导出全部数据（梦角、字卡、表情包、设置、聊天记录）</div>
       <div class="btn-row">
         <button class="btn dark" onclick="exportAll()">导出全部数据</button>
-        <label class="btn" style="cursor:pointer;display:inline-block">导入全部数据
-        <input type="file" id="importAllFile" accept=".json,application/json" style="display:none"></label>
+        <label class="btn" for="importAllFile" style="cursor:pointer">导入全部数据</label>
+        <input type="file" id="importAllFile" accept=".json,application/json" style="display:none">
       </div>
     </div>
     <div class="card">
@@ -261,8 +261,8 @@ body { overflow-x: hidden; background: linear-gradient(135deg, #667eea 0%, #764b
     <div class="btn-row" style="margin-top:10px"><button class="btn dark" onclick="addGroup()">+ 新建分组</button></div>
     <div class="btn-row" style="margin-top:10px">
       <button class="btn" onclick="exportJSON()">导出字卡</button>
-      <label class="btn" style="cursor:pointer;display:inline-block">导入字卡
-<input type="file" id="importFile" accept=".json,application/json" style="display:none"></label>
+      <label class="btn" for="importFile" style="cursor:pointer">导入字卡</label>
+      <input type="file" id="importFile" accept=".json,application/json" style="display:none">
   </div>
 </div>
 
@@ -274,8 +274,8 @@ body { overflow-x: hidden; background: linear-gradient(135deg, #667eea 0%, #764b
     <div class="btn-row" style="margin-top:10px"><button class="btn dark" onclick="addStickerGroup()">+ 新建表情分组</button></div>
     <div class="btn-row" style="margin-top:10px">
       <button class="btn" onclick="addTextSticker()">+ 添加文字表情</button>
-      <label class="btn" style="cursor:pointer;display:inline-block">上传图片表情
-      <input type="file" id="stickerImgInput" accept="image/*" style="display:none"></label>
+      <label class="btn" for="stickerImgInput" style="cursor:pointer">上传图片表情</label>
+      <input type="file" id="stickerImgInput" accept="image/*" multiple style="display:none">
     </div>
   </div>
 </div>
